@@ -13,3 +13,54 @@ body {
 img {
   max-width: 100%;
 }
+
+.debug {
+  border: 2px dashed black;
+}
+
+***********/* LAYOUT */***********
+
+.flex {
+  display: flex;
+}
+
+section {
+  background-color: blueviolet;
+  width: calc(100vh - 20rem);
+
+  overflow: auto;
+  height: calc(100vh - 5rem);
+}
+
+main {
+  background-color: dodgerblue;
+  display: flex;
+}
+
+nav {
+  width: 20rem;
+  background-color: gold;
+}
+
+header {
+  height: 5rem;
+  background-color: rgba(255, 228, 196, 0.514);
+  position: fixed;
+}
+
+#songs {
+  padding-top: 10rem;
+}
+
+footer{
+    height: 8rem;
+    background-color: brown;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+**********/* RESPONSIVE */***********
+
+
