@@ -13,3 +13,31 @@ img {
 .debug {
   border: 2px dashed black;
 }
+
+/* LAYOUT */
+
+.flex {
+  display: flex;
+}
+
+header {
+  background-color: dodgerblue;
+  height: 10rem;
+  position: fixed;
+  left: 15rem;
+  right: 0;
+}
+
+main {
+  height: calc(100vh - 10rem);
+  background-color: lightcoral;
+  width: calc(100% - 15rem);
+  overflow: auto;
+}
+
+footer {
+  height: 8px;
+  background-color: aqua;
+}
+
+/***************RESPONSIVE ****************/
