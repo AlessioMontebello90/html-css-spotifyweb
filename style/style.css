@@ -1,5 +1,15 @@
+/* RESET */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.debug {
+  border: 2px dashed black;
 }
