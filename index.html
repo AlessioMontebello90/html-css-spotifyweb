@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- FONT AWSOME -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -13,65 +12,77 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
-    <!-- LINK STYLE -->
-
-    <link rel="stylesheet" href="./style/style.css" />
-    <title>Spotify Web</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Spoorify Web</title>
   </head>
-
   <body>
-    <main class="hero">
-      <!-- HEADER -->
-      <header class="header">
-        <img class="header-logo" src="./img/logo.svg" alt="" />
-        <button class="header-btn">Efettua l'upgrade</button>
-      </header>
+    <main>
+      <!-- SIDE-BAR -->
 
-      <!-- SIDEBAR-MENU' -->
-
-      <nav class="sidebar">
-        <div class="sidebar-items">
-          <i class="sidenav__icon fa-solid fa-house"></i>
-          <span class="sidenav__text">Home</span>
-        </div>
-        <div class="sidebar-items">
-          <i class="sidenav__icon fa-solid fa-search"></i>
-          <span class="sidenav__text">Cerca</span>
-        </div>
-
-        <div class="sidebar-items">
-          <i class="fa-solid fa-record-vinyl"></i>
-          <span class="sidenav__text">Libreria</span>
-        </div>
-
-        <!-- PLAYLIST -->
-
-        <div class="playlist-items">
-          <h4 class="playlist-title">Playlist</h4>
-          <div class="playlist-add">
-            <i class="fa-solid fa-square-plus"></i>
-            <span>Crea Playlist</span>
+      <nav id="sidebar">
+        <div>
+          <div class="bar-icons">
+            <img src="img/logo.svg" alt="logo" />
+            <div>
+              <img src="img/home.svg" alt="" />
+              <h5>Home</h5>
+            </div>
+            <div>
+              <img src="img/search.svg" alt="" />
+              <h5>Cerca</h5>
+            </div>
+            <div>
+              <img src="img/libreria.svg" alt="" />
+              <h5>La tua libreria</h5>
+            </div>
           </div>
-          <span class="playlist-name">Nome Playlist</span>
-          <span class="playlist-name">Nome Playlist</span>
-          <span class="playlist-name">Nome Playlist</span>
-          <span class="playlist-name">Nome Playlist</span>
-          <span class="playlist-name">Nome Playlist</span>
-          <span class="playlist-name">Nome Playlist</span>
-          <span class="playlist-name">Nome Playlist</span>
-          <span class="playlist-name">Nome Playlist</span>
+
+          <div class="sidebar-playlist">
+            <h4>playlist</h4>
+
+            <div class="create-playlist">
+              <span> + </span>
+              <h4>Crea Playlist</h4>
+            </div>
+
+            <h5>Nome Playlist</h5>
+            <h5>Nome Playlist</h5>
+            <h5>Nome Playlist</h5>
+            <h5>Nome Playlist</h5>
+            <h5>Nome Playlist</h5>
+            <h5>Nome Playlist</h5>
+            <h5>Nome Playlist</h5>
+          </div>
+        </div>
+
+        <div class="user">
+          <div>
+            <i class="fa-solid fa-arrow-down"></i>
+            <h6>Installa app</h6>
+          </div>
+          <div>
+            <img src="img/profile.svg" alt="" />
+            <h5>John Doe</h5>
+          </div>
         </div>
       </nav>
 
-      <!-- SECTION-PLAYLIST-COVER -->
+      <!-- MAIN -->
 
       <section>
-        <div class="debug"></div>
-        <div class="debug"></div>
+        <!-- HEADER -->
+        <header id="header">
+          <div>
+            <button><a href="#">effettua l'upgrade</a></button>
+          </div>
+        </header>
+
+        <!-- MUSIC CATEGORY -->
       </section>
     </main>
-
-    <footer class="footer"></footer>
   </body>
 </html>

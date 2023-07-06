@@ -1,6 +1,17 @@
-******************
-/* RESET */
-******************
+********************
+   /* RESET */
+********************
+
+:root {
+  --txt-color-primary: #ffff;
+  --txt-color-second: #6f6f6f;
+
+  --bg-color-primary: #141922;
+  --bg-color-footer: #282828;
+  --bg-color-sidebar: #000000;
+
+  --head-color: #080b12;
+}
 
 * {
   box-sizing: border-box;
@@ -10,9 +21,6 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
-  background-color: hsl(219, 26%, 11%);
-  color: hsl(0, 0%, 100%);
 }
 
 img {
@@ -23,98 +31,127 @@ img {
   border: 2px dashed black;
 }
 
-***********
-/* LAYOUT */
-***********
+********************
+   /* LAYOUT */
+********************
 
-.hero{
-    width: min(100% - 3rem), 1200px;
-    margin-inline: auto;
+main {
+  display: flex;
 }
 
-.header{
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow: auto;
-    background-color: hsla(0, 0%, 16%, 0.6);
-    color: hsl(0, 0%, 100%);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
+********************
+   /*SIDEBAR */
+********************
 
+#sidebar {
+  width: 15rem;
+  background-color: var(--bg-color-sidebar);
+  color: var(--txt-color-second);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.header-logo {
-    height: 100px;
-    width: 100px;
-    margin-left: 1rem;
+#sidebar > * {
+  padding: 1rem;
 }
 
-.header__button {
-    
-    color: white;
-    border-radius: 30px;
-    background-color: transparent;
-    text-transform: uppercase;
-    margin-right: 1rem;
-    padding: 1rem 2rem;
+.bar-icons > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
 }
 
-.sidebar{
-    width: 250px;
-    position: fixed;
-    top: 0;
-    height: calc(100% - 100px);
-    background-color:black;
-    color: hsl(0, 0%, 100%);
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding-top: 100px;
-    padding-left: 1rem;
+.bar-icons > img {
+  width: 70%;
+  padding: 0.5rem 0;
 }
 
-.playlist-items{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    color: white;
+.bar-icons div img {
+  width: 15%;
 }
 
-.playlist-title{
-    text-transform: uppercase;
-    color: white;
-
+.sidebar-playlist {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  text-align: start;
 }
 
-.playlist-add{
-    color: lightgray;
-
+.sidebar-playlist h4:first-child {
+  color: var(--txt-color-primary);
+  text-transform: uppercase;
 }
 
-.playlist-add .fa_solid{
-    font-size: 3rem;
+.create-playlist {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.playlist-name{
-    font-size: small;
+.sidebar-playlist span {
+  color: #000000;
+  text-align: center;
+  background-color: var(--txt-color-second);
+  width: 2.3rem;
+  height: 2.3rem;
+  line-height: 2.3rem;
+  font-size: 2.3rem;
+  font-weight: 600;
+  background-color: #a3a3a3;
+  display: inline-block;
 }
 
-footer{
-    height: 100px;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    bottom: 0;
-    color: white;
-    background-color: hsla(0, 0%, 16%, 0.6);
+#sidebar .user div:first-child {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--txt-color-second);
 }
 
+#sidebar .user div:first-child i {
+  font-size: 0.5rem;
+  border: 1px solid var(--txt-color-second);
+  border-radius: 50%;
+  padding: 5px;
+}
 
+#sidebar .user h5 {
+  color: var(--txt-color-primary);
+}
 
-**********/* RESPONSIVE */***********
+#sidebar .user div:last-child {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding-top: 0.5rem;
+}
 
+#sidebar .user div:last-child img {
+  width: 1.5rem;
+  background-color: var(--txt-color-second);
+  border-radius: 50%;
+}
 
+********************
+   /*HEADER */
+********************
+
+#header button {
+  border: 1px solid var(--txt-color-primary);
+  background-color: transparent;
+
+  border-radius: 2rem;
+  margin-right: 1rem;
+}
+
+#header button a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--txt-color-primary);
+  font-weight: 600;
+  padding: 1rem 3rem;
+  display: block;
+}
