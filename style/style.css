@@ -165,7 +165,7 @@ main {
 /* music */
 
 section {
-  background-color: #4e6185;
+  background-color: var(--bg-color-primary);
   width: calc(100% - 15rem);
 
   overflow: auto;
@@ -173,11 +173,15 @@ section {
 }
 
 #music {
-  padding-top: 7rem;
+  padding: 6rem 1rem 0;
+}
+
+#music > * {
+  padding: 1rem 0;
 }
 
 #music .menu-options {
-  width: 70%;
+  width: 50%;
   display: flex;
   justify-content: space-evenly;
   margin: 0 auto;
@@ -186,6 +190,39 @@ section {
 #music .menu-options h5 {
   text-transform: uppercase;
   color: var(--txt-color-second);
+}
+
+#music h2 {
+  color: var(--txt-color-primary);
+}
+
+#music .row {
+  display: flex;
+  padding: 1rem 0;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+#music .col {
+  width: calc(100% / 6);
+}
+
+#music .col .card {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+#music .col .card h4 {
+  color: var(--txt-color-primary);
+  padding: 0.5rem 0;
+}
+
+#music h5 {
+  color: var(--txt-color-second);
+}
+
+#music .popular-music img {
+  border-radius: 50%;
 }
 
 /* footer */
