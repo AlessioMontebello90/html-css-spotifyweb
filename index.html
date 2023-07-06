@@ -16,16 +16,16 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style/style.css" />
-    <title>Spoorify Web</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Spotify Web xx</title>
   </head>
+
   <body>
     <main>
-      <!-- SIDE-BAR -->
-
+      <!-- sidebar -->
       <nav id="sidebar">
         <div>
-          <div class="bar-icons">
+          <div class="sidebar-icons">
             <img src="img/logo.svg" alt="logo" />
             <div>
               <img src="img/home.svg" alt="" />
@@ -71,18 +71,78 @@
         </div>
       </nav>
 
-      <!-- MAIN -->
-
+      <!-- MAIN CONTENT -->
       <section>
-        <!-- HEADER -->
+        <!-- header -->
         <header id="header">
           <div>
             <button><a href="#">effettua l'upgrade</a></button>
           </div>
         </header>
 
-        <!-- MUSIC CATEGORY -->
+        <!-- music -->
+        <div id="music">
+          <div class="menu-options">
+            <h5>in evidenza</h5>
+            <h5>podcast</h5>
+            <h5>classifiche</h5>
+            <h5>generi e mood</h5>
+            <h5>nuove uscite</h5>
+            <h5>scopri</h5>
+          </div>
+
+          <div>
+            <h2>Recently played</h2>
+            <div class="row">
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
+
+    <footer id="footer">
+      <div class="song-info">
+        <img src="img/sinister.jpeg" alt="" />
+        <div>
+          <h5>Sinister</h5>
+          <h6>Brano Nome</h6>
+        </div>
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-regular fa-folder"></i>
+      </div>
+
+      <div class="song-player">
+        <div class="song-buttons">
+          <i class="fa-solid fa-shuffle"></i>
+          <i class="fa-solid fa-backward-step"></i>
+          <i class="fa-regular fa-circle-play fa-2xl"></i>
+          <i class="fa-solid fa-forward-step"></i>
+          <i class="fa-solid fa-rotate-right"></i>
+        </div>
+        <div class="song-bar">
+          <h6>0:25</h6>
+          <span class="bar">
+            <span class="bar-progress"></span>
+          </span>
+          <h6>4:35</h6>
+        </div>
+      </div>
+
+      <div class="song-volume">
+        <i class="fa-solid fa-list-ul"></i>
+        <i class="fa-solid fa-desktop"></i>
+        <i class="fa-solid fa-volume-high"></i>
+
+        <span class="bar-small">
+          <span class="bar-progress-small"></span>
+        </span>
+      </div>
+    </footer>
   </body>
 </html>
