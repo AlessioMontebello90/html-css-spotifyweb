@@ -402,26 +402,84 @@ section {
 
 /* RESPONSIVE */
 
-/* spotify-md laptop */
+/* apotify-md laptop */
 
 @media screen and (max-width: 1250px) {
-  header {
-    background-color: dodgerblue;
+  #music .row {
+    flex-wrap: wrap;
+  }
+
+  #music .col {
+    width: 25%;
+  }
+
+  #music .menu-options {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  #music .menu-options h5 {
+    padding: 1rem 0.5rem;
+  }
+
+  #footer .song-bar .bar {
+    width: 20rem;
   }
 }
 
-/* spotify-sm tablet */
+/* spotify-s tablet */
 
 @media screen and (max-width: 992px) {
-  header {
-    background-color: lightcoral;
+  #music .col {
+    width: 50%;
+  }
+
+  #footer .song-bar .bar {
+    width: 12rem;
+  }
+
+  #footer .song-info-icon {
+    display: flex;
+    flex-direction: column;
   }
 }
 
 /* spotify-x-small mobile */
 
 @media screen and (max-width: 576px) {
-  header {
-    background-color: lightgreen;
+  #sidebar {
+    width: 4rem;
+  }
+
+  #sidebar .sidebar-playlist,
+  #sidebar h5,
+  #sidebar .user h6,
+  #sidebar .sidebar-icons img[alt="logo"] {
+    display: none;
+  }
+
+  #sidebar .sidebar-icons img[alt="logosmall"] {
+    display: block;
+  }
+
+  #sidebar .sidebar-icons img {
+    width: 100%;
+  }
+
+  #sidebar .user div:first-child {
+    justify-content: center;
+    border-bottom: none;
+  }
+
+  #header {
+    left: 4rem;
+  }
+
+  section {
+    width: calc(100% - 4rem);
+  }
+
+  #footer > * {
+    width: calc(100% / 3);
   }
 }
